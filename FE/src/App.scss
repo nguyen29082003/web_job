@@ -1,0 +1,219 @@
+@use "./features/scss/Variable.scss" as *;
+.heading {
+  padding: 2rem 0rem;
+  &__title {
+    h3 {
+      text-align: center;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      a {
+        color: $bgButtonApplyHover !important;
+        &:hover {
+          color: $bgButtonDeadline !important;
+        }
+      }
+    }
+  }
+  &__hr {
+    width: 13%;
+    height: 2px;
+    background-color: $colorHr;
+    margin: 0 auto;
+  }
+}
+#admin {
+  input,
+  textarea {
+    box-shadow: none !important;
+    resize: none;
+  }
+  input[type="submit"] {
+    border-radius: 5px;
+    border: 1px solid $bgButtonSubmit;
+    padding: 0.3rem 1.2rem;
+    background-color: $bgButtonSubmit;
+    color: white;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: white;
+      color: $bgButtonSubmit;
+      border-color: $bgButtonSubmit;
+    }
+  }
+  .ant-select {
+    border: 1px solid #ced4da;
+  }
+  .form-group {
+    margin-bottom: 0.5rem;
+  }
+}
+.infor input[type="submit"] {
+  border-radius: 5px;
+  border: 1px solid $bgButtonSubmit;
+  padding: 0.3rem 1.2rem;
+  background-color: $bgButtonSubmit;
+  color: white;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: white;
+    color: $bgButtonSubmit;
+    border-color: $bgButtonSubmit;
+  }
+}
+.input-ant {
+  border-radius: 0.25rem;
+  height: 1.5 !important;
+}
+// .selector-for-some-widget {
+//     box-sizing: content-box;
+//   }
+.text-silver {
+  color: silver;
+}
+.spin {
+  text-align: center;
+}
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: none !important;
+}
+
+@media (max-width: 576px) {
+  .heading {
+    &__hr {
+      width: 30%;
+    }
+  }
+}
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+textarea.form-control {
+  resize: none;
+  outline: none;
+  box-shadow: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+label.file {
+  cursor: pointer;
+  background-color: #4e148c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.5s;
+  font-weight: 600;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: rgb(224, 222, 222);
+    color: #4e148c;
+  }
+}
+.infor .d-flex {
+  justify-content: space-between;
+}
+.infor .form-group {
+  padding-bottom: 1rem;
+}
+.w-45 {
+  width: 45%;
+}
+iframe {
+  width: 100%;
+}
+.div-btn-cv {
+  width: 100%;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  .btn-infor-cv {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: $bgButtonApply;
+    border: 1px solid $bgButtonApply;
+    border-radius: 5px;
+    transition: 0.5s;
+    &:hover {
+      color: white;
+      background-color: $bgButtonApply;
+    }
+  }
+}
+.iconTypeWork i {
+  font-size: 1.5rem;
+  color: $bgButtonApply;
+  transition: 0.5s;
+}
+.icon_footer {
+  background-color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  float: left;
+  margin-right: 1rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  transition: 0.5s;
+  position: relative;
+}
+.icon_footer:hover {
+  transform: scale(1.2);
+}
+.text-grant {
+  color: #a80077;
+}
+.position-relative {
+  width: 100%;
+}
+.btn-link {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  border: 1px solid $bgButtonApply;
+  color: $bgButtonApply;
+  background-color: white;
+  padding: 0.4rem 1.5rem;
+  outline: none;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  &:hover {
+    border: 1px solid $bgButtonApply;
+    color: white;
+    background-color: $bgButtonApply;
+  }
+}
+.btn-message {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  color: $bgButtonApply;
+  background-color: white;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  &:hover {
+    color: white;
+    background-color: $bgButtonApply;
+  }
+}
+.h-100vh {
+  min-height: 100vh !important;
+}

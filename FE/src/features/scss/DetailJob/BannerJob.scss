@@ -1,0 +1,39 @@
+.bannerJob{
+    .container{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: yellowgreen;
+        height: 12.813rem;
+        position: relative;
+        .bannerJob__content{
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(255,255,255,.5) 100%);
+            &__logo{
+                background-color: rgba(255,255,255,.7);
+                border-radius: 5px;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            &__title{
+                color: white;
+                text-align: center;
+                .title--top{
+                    font-size: 1rem;
+                }
+                .title--bot{
+                    font-size: 1.1rem;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

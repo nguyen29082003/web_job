@@ -1,0 +1,246 @@
+@use "../Variable.scss"as *;
+@mixin jobBox {
+    .job__box {
+      border-radius: 5px;
+      border: 1px solid silver;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      transition: 0.2s;
+      transform: translateY(0px);
+      .job__logo {
+        width: 120px;
+        height: 120px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 0.5rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .btn-delete-job {
+        padding: 0.5rem 1rem;
+        border: 1px solid $bgButtonApplyHover;
+        background-color: white;
+        color: $bgButtonApplyHover;
+        transition: 0.5s;
+        position: absolute;
+        top: 70%;
+        left: 85%;
+        border-radius: 5px;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        &:hover {
+          background-color: $bgButtonApplyHover;
+          border: 1px solid $bgButtonApplyHover;
+          color: white;
+        }
+      }
+      .btn-edit-job {
+        padding: 0.5rem 1rem;
+        border: 1px solid $bgButtonApplyHover;
+        background-color: white;
+        color: $bgButtonApplyHover;
+        transition: 0.5s;
+        position: absolute;
+        top: 70%;
+        left: 70%;
+        border-radius: 5px;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        &:hover {
+          background-color: $bgButtonApplyHover;
+          border: 1px solid $bgButtonApplyHover;
+          color: white;
+        }
+      }
+      .job__content {
+        width: 100%;
+        .job__title {
+          width: 90%;
+          a {
+            color: #2c3038;
+            text-decoration: none;
+            .jobTitle {
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              padding-top: 1rem;
+              font-size: 1.2rem;
+              text-transform: capitalize;
+            }
+          }
+        }
+        .job__nameCompany {
+          padding-bottom: 0.1rem;
+          width: 95%;
+          a {
+            color: #2c3038;
+            text-decoration: none;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+          }
+        }
+        .job__detail {
+          display: flex;
+          &--address {
+            display: flex;
+            margin-right: 0.7rem;
+            .job__icon {
+              font-size: 0.9rem;
+              margin-right: 0.2rem;
+            }
+          }
+          &--deadline {
+            display: flex;
+            margin-right: 0.7rem;
+            .job__icon {
+              font-size: 0.9rem;
+              margin-right: 0.2rem;
+            }
+          }
+          &--salary {
+            display: flex;
+            .job__icon {
+              font-size: 0.9rem;
+              margin-right: 0.2rem;
+            }
+          }
+        }
+      }
+      .job__tag {
+        position: absolute;
+        width: 100px;
+        background-color: red;
+        right: -25px;
+        top: 16px;
+        text-align: center;
+        transform: rotate(45deg);
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+      }
+      &:hover {
+        transform: translateY(-5px);
+        border: 1px solid transparent;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: #faf6f6;
+      }
+    }
+}
+.ListJob {
+  @include jobBox();
+  .col-lg-6 {
+    margin-bottom: 1rem;
+  }
+}  
+.filter-exp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  .box-exp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .box {
+      padding: 5px 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .active {
+      background-color: #2529d8;
+      color: white;
+    }
+  }
+}  
+@media (max-width: 576px) {
+  .ListJob {
+    .container {
+      padding: 0;
+    }
+    .job__box {
+      border-radius: 0;
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      border-left: none;
+      border-right: none;
+      .job__logo {
+        // width: 50px;
+        // height: 50px;
+        margin-right: 0.5rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .job__content {
+        .job__title {
+          a {
+            color: #2c3038;
+            text-decoration: none;
+          }
+        }
+        .job__nameCompany {
+          padding-bottom: 0.1rem;
+          a {
+            color: #2c3038;
+            text-decoration: none;
+          }
+        }
+        .job__detail {
+          display: flex;
+          &--address {
+            display: flex;
+            margin-right: 0.7rem;
+            .job__icon {
+              font-size: 0.9rem;
+              margin-right: 0.2rem;
+            }
+          }
+          &--deadline {
+            display: none;
+            margin-right: 0.7rem;
+            .job__icon {
+              font-size: 0.9rem;
+              margin-right: 0.2rem;
+            }
+          }
+          &--salary {
+            display: flex;
+            .job__icon {
+              font-size: 0.9rem;
+              margin-right: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}  
+@media (max-width: 1125px) {
+  .ListJob {
+    .btn-delete-job {
+      padding: 0.5rem 1rem;
+      top: 70%;
+      background-color: $bgButtonSubmit;
+      left: 45%;
+      transform: translate(-50%, -50%);
+    }
+    .btn-edit-job {
+      padding: 0.5rem 1rem;
+      top: 70%;
+      background-color: $bgButtonSubmit;
+      left: 35%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}   

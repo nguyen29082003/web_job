@@ -1,0 +1,53 @@
+.contact {
+  padding: 6rem 5rem;
+  background: url("../../images/cup-of-coffee-1280537.jpg") repeat center;
+  background-size: cover;
+  color: white;
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px white;
+  }
+  &__detail {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &__gmail {
+    position: relative;
+    textarea {
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      width: 500px;
+      padding: 1rem 1.5rem;
+      resize: none;
+      color: black;
+    }
+    button {
+      position: absolute;
+      left: 0;
+      bottom: -40%;
+      outline: none;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 4px;
+      background-color: #ff4948;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: white;
+      transition: 0.5s;
+      &:hover {
+        background-color: #f83333;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .contact {
+    padding: 6rem 2rem 6rem 3rem;
+    textarea {
+      width: 100%;
+    }
+  }
+}

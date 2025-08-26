@@ -1,0 +1,95 @@
+@use "../Variable.scss"as *;
+.DetailNew{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    .new__box{
+        &__content{
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        &__share{
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            font-weight: 500;
+            letter-spacing: .1rem;
+            background-color: #f8f9fb;
+            border-radius: 5px;
+            border-left:2px solid  $bgButtonApplyHover;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            .shareIcon{
+                flex-grow: 1;
+                display: flex;
+                justify-content: flex-end;
+                font-size: 1.5rem;
+                .icon{
+                    width: 3rem;
+                    height: 3rem;
+                    margin-left: 1rem;
+                    display: flex;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: .9;
+                    transition: .5s;
+                    color: white;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .title--detail{
+        font-size: 1.2rem;
+        color: #343E47;
+        margin-bottom: 0.5rem;
+    }
+    .box__recruitment{
+        &__content{
+            .box__new{
+                display: flex;
+                border-bottom: 1px dotted silver;
+                margin-bottom: 1rem;
+                .icon__new{
+                    display: flex;
+                    img{
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+                .content{
+                    margin-left: 0.5rem;
+                    &__title{
+                        a{
+                            color: #5798b5;
+                            font-size: 1.1rem;
+                        }
+                    }
+                    &__name{
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .xemthem{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+    .content__link{
+        border-bottom: 1px dotted silver;
+        margin-bottom: 1rem;
+        &:hover{
+            a{
+                color: black;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+$colorVien: #2529d8;
+.searchJobs {
+  .key {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid $colorVien;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0.5rem 1rem;
+    .key__title {
+      white-space: nowrap;
+      margin-right: 0.5rem;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      margin-right: 0.5rem;
+      outline: none;
+      border: none;
+    }
+  }
+  .address {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid $colorVien;
+    padding: 0.5rem 1rem;
+    border-right: none;
+    border-left: none;
+    .address__title {
+      white-space: nowrap;
+      margin-right: 0.5rem;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      margin-right: 0.5rem;
+      outline: none;
+      border: none;
+    }
+  }
+  .btn {
+    border: 1px solid $colorVien;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    button {
+      outline: none;
+      border: none;
+      width: 100%;
+      height: 100%;
+      background-color: $colorVien;
+      color: white;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+  }
+  .col-md-6,
+  .col-md-3 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .searchJobs {
+    padding: 0 1rem;
+    .key {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-bottom: 1rem;
+    }
+    .address {
+      border-right: 1px solid $colorVien;
+      border-left: 1px solid $colorVien;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      button {
+        height: 4289px;
+      }
+    }
+  }
+}

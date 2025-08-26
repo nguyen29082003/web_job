@@ -1,0 +1,78 @@
+@use "../Home/ListJobs.scss"as *;
+@use "../Variable.scss"as *;
+.contentCompany{
+    .company__box{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 2rem 1.5rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        &__title{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: .1rem;
+        }
+        &__content{
+            text-align: justify;
+        }
+        &__detail{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            &__icon{
+                width: 50px;
+                height: 50px;
+                border: 1px solid rgba(99, 99, 99, 0.2);
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 1rem;
+                i{
+                    font-size: 1rem;
+                    color: rgba(99, 99, 99, 0.8);
+                }
+            }
+            &__title{
+                font-size: 1.2rem;
+            }
+        }
+        &__email{
+            input[type="text"]{
+                outline: none;
+                width: 100%;
+                margin-bottom: 1rem;
+                height: 2.5rem;
+                border: 1px solid rgba(99, 99, 99, 0.8);
+                border-radius: 5px;
+                padding: 0 0 0 1rem;
+            }
+            input[type="submit"]{
+                width: 100%;
+                font-size: 1.1rem;
+                background-color: $bgButtonApply;
+                padding: .5rem 0 .5rem 0;
+                border: none;
+                transition: .5s;
+                border-radius: 5px;
+                color: white;
+                &:hover{
+                    background-color:  $bgButtonApplyHover;
+                }
+            }
+        }
+    }
+    .job{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        &__title{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        &__content{
+            @include jobBox();
+            .job__box{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

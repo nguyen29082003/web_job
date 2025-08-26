@@ -1,0 +1,49 @@
+.listCv {
+  .box {
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+    transition: 0.5s;
+    &-img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &-tag {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+      p {
+        padding: 0.2rem 0.4rem;
+        border-radius: 5px;
+        background-color: #e4f7ed;
+        margin-left: 0.6rem;
+        color: #0daa53;
+        font-weight: 600;
+        font-size: 0.7rem;
+      }
+    }
+    &-name {
+      p {
+        margin-left: 0.6rem;
+        font-size: 0.9rem;
+        color: black;
+      }
+    }
+    &-color {
+      display: flex;
+      padding-bottom: 1rem;
+      .color {
+        width: 15px;
+        height: 15px;
+        margin-left: 0.6rem;
+        background-color: #e40138;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.footer{
+    background: url("../../images/dots.png");
+    background-color: #353a40;
+    .container-footer{
+        color: #ffffff;
+        padding: 3rem 3rem;
+        .footer__box{
+            .footer__title{
+                h3{
+                    font-size: 1.5rem;
+                    padding: .5rem 0rem;
+                    border-bottom: 1px ridge rgba(57, 57, 58, 0.46);
+                    margin-bottom: 1rem;
+                    font-weight: 300 !important;
+                    color: white;
+                }
+            }
+            .footer__content{
+                color: #616263;
+                font-size: .9rem;
+                .about{
+                    text-align: justify;
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        list-style-type: none;
+                        padding: .5rem 0rem;
+                        transform: translateX(0px);
+                        transition: .5s;
+                        a{
+                            color: #616263;
+                            text-decoration: none;
+                            transition: .5s;
+                            &:hover{
+                                color: rgb(199, 192, 192);
+                            }
+                        }
+                        &:hover{
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .col-lg-3{
+        padding-bottom: 2rem;
+    }
+}

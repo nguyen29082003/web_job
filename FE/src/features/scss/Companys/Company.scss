@@ -1,0 +1,50 @@
+@use "../Variable.scss" as *;
+.companys{
+        .company__box{
+            border-radius: 5px;
+            .company__bg{
+                background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.4) 100%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2rem;
+                border-radius: 5px;
+            }
+            &__avatar{
+                margin: 2rem 0 2rem 0;
+                background-color: rgba(255,255,255,.1);
+                border: 2px solid rgba(255,255,255,.3);
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            &__name{
+                font-size: 1.1rem;
+                color: white;
+
+            }
+            &__address{
+                color: rgba(255,255,255,.7);
+                margin-bottom: 1rem;
+            }
+            &__button{
+                margin-bottom: 1.5rem;
+                a{
+                    outline: none;
+                    border: none;
+                    margin: 0rem 0 1rem 0;
+                    padding: .3rem 1rem ;
+                    border-radius: 5px;
+                    background-color: $bgButtonApply;
+                    color: white;
+                    &:hover{
+                        background-color: $bgButtonApplyHover;
+                    }
+                }
+            }
+        }
+    
+}

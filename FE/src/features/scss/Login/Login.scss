@@ -1,0 +1,193 @@
+@use "../Variable.scss"as *;
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+    &__title{
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    .line__login{
+        height: 70%;
+        width: 1px;
+        background-color: $bgButtonDeadline;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .login__box{
+        position: relative;
+        background-color: white;
+        width: 66.7%;
+        height: 438px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        &__left{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            form{
+                width: 80%;
+            }
+            &__title{ 
+                font-size: 1.2rem;
+                margin-bottom: .5rem;
+            }
+            input[type="text"],input[type="password"]{
+                width: 100%;
+                height: 3rem;
+                border-radius: 50px;
+                outline: none;
+                background-color: #f1f1f1;
+                border: none;
+                padding-left: 2rem;
+                margin-bottom: 1rem;
+            }
+            &__button{
+                display: flex;
+                justify-content: center;
+                input[type="submit"]{
+                    background-color: $bgButtonApply;
+                    border: none;
+                    color: white;
+                    padding: .8rem 2rem;
+                    border-radius: 10px;
+                    margin-top: 1rem;
+                    &:hover{
+                        background-color: $bgButtonApplyHover;
+                    }
+                }
+            }
+        }
+        &__right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .right{
+                height: 100%;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &__text{
+                font-size: 1.1rem;
+                color: rgba(0,0,0,.7);
+            }
+            button{
+                height: 3rem;
+                width: 90%;
+                margin: .5rem 0;
+                border: none;
+                border-radius: 100px;
+                color: white;
+            }
+            button.in{
+                background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            }
+            button.fb{
+                background: #3f64ab;
+            }
+        }
+    }
+}
+@media (max-width:900px){
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        background-color: #f1f1f1;
+        &__title{
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+            
+        }
+        .line__login{
+            display: none;
+        }
+        .login__box{
+            position: relative;
+            background-color: white;
+            width: 66.7%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            &__left{
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: unset;
+            }
+            &__right{
+                width: 80%;
+                margin-bottom: 2rem;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: unset;
+            }
+        }
+    }
+}
+@media (max-width:576px){
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        background-color: #f1f1f1;
+        &__title{
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+            
+        }
+        .line__login{
+            display: none;
+        }
+        .login__box{
+            position: relative;
+            background-color: white;
+            width: 95.7%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            &__left{
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: unset;
+            }
+            &__right{
+                width: 80%;
+                margin-bottom: 2rem;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: unset;
+            }
+        }
+    }
+}

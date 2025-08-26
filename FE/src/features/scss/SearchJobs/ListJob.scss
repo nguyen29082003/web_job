@@ -1,0 +1,43 @@
+@use "../Home/ListJobs.scss"as *; 
+@use "../Variable.scss"as *;
+.ListJobSearch{
+    @include jobBox();
+    margin-top: 2rem;
+    .job__box{
+        margin-bottom: 1rem;
+        &:hover{
+            transform: translateY(-1px);
+            background-color: transparent;
+            // border-color: #192134;
+        }
+        
+    }
+    .box__filter{
+        margin-bottom: 2rem;
+        .filter--title{
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+    }
+   
+    
+    .col-md-8{
+        padding: 0;
+    }
+    .col-md-4{
+        padding: 0rem 0rem 0rem 2rem;
+    }
+
+}
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0rem;
+}
+@media (max-width:991px){
+    .ListJobSearch{
+        .col-md-4{
+            padding: 0rem 2rem 0rem 2rem;
+        }
+    }
+}

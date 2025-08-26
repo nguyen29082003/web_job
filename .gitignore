@@ -1,0 +1,39 @@
+# =========================
+# Node.js / Backend
+# =========================
+BE/node_modules
+BE/.env
+BE/dist
+BE/build
+BE/coverage
+BE/*.log
+
+# =========================
+# React / Frontend
+# =========================
+FE/node_modules
+FE/.env
+FE/build
+FE/.cache
+FE/coverage
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+*.iml

@@ -1,0 +1,36 @@
+.box__key{
+    .key__title{
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        .key__icon{
+            margin-right: 1rem;
+        }
+    }
+    .key__content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .key__tag{
+            border: 1px solid yellow;
+            border-radius: 5px;
+            margin: .2rem .5rem;
+            transition: .5s;
+            overflow: hidden;
+            a{
+                padding: 0.1rem .7rem;
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: block;
+            }
+            &:hover{
+                background:linear-gradient(90deg, #ffa704 50%,#b37c10 100% );
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}

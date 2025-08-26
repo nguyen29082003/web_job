@@ -1,0 +1,203 @@
+@use "../Variable.scss"as *;
+.Jd{
+    .job__box{
+        margin-bottom: 2rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 4px;
+        padding: .5rem 1rem 1rem 1rem;
+        position: relative;
+        
+        &__title{
+            padding: 1rem 0rem;
+            h4{
+                font-size: 1.5rem;
+            }
+        }
+        &__detail{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: .9rem;
+            .fas{
+                margin-right: 0.5rem;
+            }
+            &--address{
+                margin-right: 3rem;
+                
+            }
+            &--fulltime{
+                margin-right: 3rem;
+                text-transform: capitalize;
+            }
+            &--status{
+                margin-right: 3rem;
+
+            }
+           
+        }
+        &__title--jd{
+            font-size: 1.2rem;
+            p{
+                padding: 0;
+                margin: .5rem 0rem 1rem 0rem;
+            }
+        }
+        .apply{
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            a{
+                outline: none;
+                border: none;
+                padding: .5rem 1rem;
+                font-size: 1.2rem;
+                background-color: $bgButtonApply;
+                transition: .5s;
+                border-radius: 5px;
+                color: white;
+                &:hover{
+                    background-color: $bgButtonApplyHover;
+                }
+            }
+        }
+    }
+    .deadline__box{
+        overflow: hidden;
+        background-color: $bgButtonDeadline;
+        position: relative;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        .deadline{
+            color: white;
+            display: flex;
+            align-items: center;  
+            padding: 1rem 2rem ;          
+            &__icon{
+                font-size: 2rem;
+                padding-right: 0.5rem;
+            }
+            &__title{
+                font-size: 1.1rem;
+            }
+            &__time{
+                font-size: 1.2rem;
+            }
+        }
+        .deadline__icon--bot{
+            position: absolute;
+            right: -3%;
+            bottom: -20%;
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.24);
+            transform: rotate(30deg);
+        }
+    }
+    .save__box{
+        background-color: $bgButtonApply;
+        transition: .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        &__title{
+            color: white;
+            padding: 1rem 0rem;
+        }
+        &:hover{
+            background-color: $bgButtonApplyHover;
+        }
+    }
+    .advertisement{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 5px;
+        img{
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+    .box__keyTag{
+        margin-top: 1rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 5px;
+        padding: 1rem .5rem 1rem .5rem;
+    }
+    .col-md-9{
+        padding: 0;
+    }
+    .col-md-3{
+        padding-right: 0;
+    }
+
+}
+@media (max-width:991px){
+    .apply{
+        position: unset !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        a{
+            outline: none;
+            border: none;
+            padding: .5rem 0rem;
+            width: 100%;
+            margin-top: 0.5rem;
+            text-align: center;
+            font-size: 1.2rem;
+            background-color: $bgButtonApply;
+            transition: .5s;
+            border-radius: 5px;
+            color: white;
+            &:hover{
+                background-color: $bgButtonApplyHover;
+            }
+        }
+    }
+    .Jd{
+        .col-md-9{
+            padding: 0 12px;
+        }
+        .col-md-3{
+            padding-right: 12px !important;
+        }
+    }
+}
+.job__section {
+  margin-bottom: 20px;
+}
+
+.job__section h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2c3e50;
+}
+
+.job__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.job__tag {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+}
+
+.job__content {
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #444;
+}

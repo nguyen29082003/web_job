@@ -1,0 +1,99 @@
+@use "../Variable.scss" as *;
+#nav .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+#nav .trigger:hover {
+    color: #1890ff;
+  }
+  
+#nav .logo {
+    height: 32px;
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+    font-size: 1.2rem;
+  }
+  #nav .logo a{
+    color: white;
+  }
+  
+#nav .site-layout .site-layout-background {
+    background: #fff;
+  }
+/* #nav .counthoadon{
+  color: red;
+  position: absolute;
+  border: 1px solid ;
+} */
+#nav .bordercount{
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+#admin {
+    h3{
+        text-transform: capitalize;
+    }
+   
+}
+.btn_camera{
+  margin-left: 3rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  border: 1px solid white;
+  
+  color: $bgButtonSubmit;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem ;
+  padding: 1.6rem;
+  transition: .5s;
+  &:hover{
+    background-color: rgba(0,0,0,.2);
+  }
+}
+.ant-pagination{
+    margin-top: 1rem !important;
+    float: right;
+}
+.ant-pagination-disabled {
+    border: none !important;
+}
+.action{
+    font-size: 1.2rem;
+}
+.action .fa-edit{
+    color: rgb(14, 177, 14);
+    margin-right: 10px;
+}
+.action .fa-trash-alt{
+    color: red;
+}
+.action .fa-thumbs-down{
+    color: red;
+}
+#admin th.ant-table-cell{
+    font-weight: bold;
+    background-color: rgb(206, 199, 199);
+}
+#admin .ct{
+    font-size: .9rem;
+}
+// #admin .content{
+//     margin-top: 2rem;
+// }
+ .mtb{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#admin .add{
+    text-align: right;
+    margin-bottom: 1rem;
+}

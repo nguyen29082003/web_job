@@ -1,0 +1,43 @@
+.bannerNew{
+        height: 20.813rem;
+        position: relative;
+        .bannerNew__content{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 2rem 0 4rem;
+            background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.4) 100%);
+            &__title{
+                color: white;
+                font-size: 3rem;
+            }
+            &__tag{
+                display: flex;
+                flex-wrap: wrap;
+                .newTag{
+                    a{
+                        color: white;
+                        display: block;
+                        padding: .2rem .9rem;
+                        border-radius: 5px;
+                        margin-right: 1rem;
+                        background:linear-gradient(90deg, rgba(255,255,255,.1) 50%,rgba(0,0,0,0) 100% );
+                        transition: 1.5s;
+                        &:hover{
+                            background:linear-gradient(90deg, rgba(0,0,0,0) 50%,rgba(255,255,255,.1) 100% );
+                        }
+                    }
+                }
+            }
+            &__date{
+                color: white;
+                margin-top: 1rem;
+                .avatarNew{
+                    margin-right: 1rem;
+                }
+            }
+    }
+}

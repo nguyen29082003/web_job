@@ -1,0 +1,48 @@
+@use "../Variable.scss"as *;
+.categori{
+    padding: 2rem 0rem;
+    &__link:hover{
+        text-decoration: none;
+    }
+    &__title{
+        font-size: 1.2rem;
+        padding: 1rem .5rem .2rem .5rem;
+        color: black;
+    }
+    &__icon{
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+        font-size: 2.5rem;
+        transform: rotate(-10deg);
+        transition: .7s;
+        color: rgb(247, 162, 162);
+    }
+    &__total{
+        font-size: 1rem;
+        color: rgba(0,0,0,.5);
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
+    }
+    &__box{
+        background-color: #f8f9fb;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transition: .5s;
+        position: relative;
+        transform: translateY(0px);
+        &:hover{    
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            transform: translateY(-5px);
+            .categori__icon{
+                transform: rotate(0deg);
+                color: $colorHr;
+            }
+        }
+    }
+    .col-md-4{
+        margin-bottom: 1rem;
+    }
+}
